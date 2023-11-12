@@ -21,12 +21,12 @@ jobs:
       contents: write
 
     steps:
-      - uses: hexlet-college-students/transcrypt-actions@main
+      - uses: actions/checkout@v4
         with:
           PASSWORD: ${{ secrets.TRANSCRYPT_PASSWORD }}
         name: decrypting-action
 
-      - run: make install
+      - run: make setup
       - run: make lint
       - run: make test
 
