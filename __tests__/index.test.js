@@ -1,6 +1,6 @@
+import { describe, expect, it } from '@jest/globals';
 import * as funcs from '../index.js';
 
-/* test('task1', () => { */
   describe('task1', () => {
     it('should count', () => {
       expect(funcs.countAverage([5, 7, 9, 3, 2])).toEqual(5.2);
